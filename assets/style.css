@@ -34,6 +34,11 @@ header {
   padding-top: 0px;
   color: hsl(0, 0%, 100%);
   font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 header h1 {
@@ -42,7 +47,7 @@ header h1 {
   padding-top: 0px;
   border: 5px solid;
   border-radius: 30px;
-  background-color: hsl(0, 95%, 32%);
+  background-color: hsl(0, 100%, 32%);
   border-color: black;
   top: 50;
  
@@ -140,7 +145,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 3px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
