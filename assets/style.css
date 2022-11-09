@@ -35,6 +35,7 @@ header {
   color: hsl(0, 0%, 100%);
   font-size: 40px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -50,7 +51,6 @@ header h1 {
   background-color: hsl(0, 100%, 32%);
   border-color: black;
   top: 50;
- 
 }
 
 .card {
@@ -66,6 +66,8 @@ header h1 {
   max-width: 800px;
   padding: 30px 40px;
 }
+
+
 
 .card-header::after {
   content: " ";
@@ -172,4 +174,10 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}
+
+@media screen and (max-width: 896px) {
+ header h1 {
+  font-size: 40px;
+ }
 }
