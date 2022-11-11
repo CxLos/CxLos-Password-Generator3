@@ -1,6 +1,6 @@
 // Assignment Code
 //Step 1: Variables
-const upper = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+var upper = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 var lower = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 var number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 var character = ['!', '?', '@', '#', '$', '%', '^', '&', '*', '(', ')', '<', '>', '[', ']', '{', '}']
@@ -34,30 +34,41 @@ function getCharacter() {
 
 //step 4: Bigger Function
 function generatePassword() {
-  var xs = [];
+  //Empty array
+  var pw = [];
 
+  if(!upper2.checked && !lower2.checked && !number2.checked && !character2.checked) {
+    alert('Please choose atleast 1 criteria.')
+    return
+  }
+  // .checked is boolean
   if(upper2.checked) {
-      xs.push(getUppercase())
+      pw.push(getUppercase())
   }
 
   if(lower2.checked) {
-    xs.push(getLowercase())
+    pw.push(getLowercase())
 }
 
   if(number2.checked) {
-    xs.push(getNumber())
+    pw.push(getNumber())
 }
   
   if(character2.checked) {
-    xs.push(getCharacter())
+    pw.push(getCharacter())
 }
 
-return xs[Math.floor(Math.random() * xs.length)]
+ return pw[Math.floor(Math.random() * pw.length)]
 
 }
 
 function writePassword() {
   const len = length2.value;
+  if (len < 8 || len > 128) {
+    alert('Please enter a number greater than 8 and less than 128.')
+    return 
+  }
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -69,13 +80,13 @@ function writePassword() {
   passwordText.innerHTML = password;
 
 }
+
 //Step 5: Event Listener
 var generateBtn = document.querySelector("#generate");
 
 generateBtn.addEventListener('click', writePassword);
 
 // Testing functions to make sure they work
-
 console.log(getUppercase());
 console.log(getLowercase());
 console.log(getNumber());

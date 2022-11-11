@@ -48,7 +48,7 @@ header h1 {
   padding-top: 0px;
   border: 5px solid;
   border-radius: 30px;
-  background-color: hsl(0, 100%, 32%);
+  background-color: hsl(0, 100%, 37%);
   border-color: black;
   top: 50;
 }
@@ -101,7 +101,7 @@ header h1 {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: hsl(0, 100%, 37%);
   border: 4px solid;
   border-color: black;
   border-radius: 25px;

@@ -2,20 +2,14 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- My motivation for this project was to apply some of the javascript functions that we learned in class and put them to the test.
+- I built this project to randomly generate strong passwords whenever I may need them.
+- The problem that this project solves is being able to randomly generate a password based off of user selected criteria.
+- In my first JavaScript project, i learned how to define variables, utilize the querySelector, create functions using Math.random and Math.floor, created a more complex function to utilize multiple smaller functions, and then finally, add an event listener at the end to make it all happen!
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+To use my application, select a password length between 8-128 characters, then select atleast one of any of the criteria listed under the password length input, and then click the generate button and watch your new password pop up right in front of you!
 
 ## License
 
