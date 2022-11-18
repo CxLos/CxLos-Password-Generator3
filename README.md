@@ -11,6 +11,11 @@
 
 To use my application, select a password length between 8-128 characters, then select atleast one of any of the criteria listed under the password length input, and then click the generate button and watch your new password pop up right in front of you!
 
+https://cxlos.github.io/CxLos-Password-Generator3/
+
+![Password Generator](./assets/images/generator-231446.png)
+
+
 ## License
 
 MIT License
