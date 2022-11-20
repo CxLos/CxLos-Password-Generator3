@@ -72,7 +72,7 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-    for(let i=0; i<len; i++) {
+    for(let i=0; i<len -1; i++) {
       const x= generatePassword();
       password += x;
     }
