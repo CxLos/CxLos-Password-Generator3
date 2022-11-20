@@ -37,10 +37,9 @@ function generatePassword() {
   //Empty array
   var pw = [];
 
-  if(!upper2.checked && !lower2.checked && !number2.checked && !character2.checked) {
-    alert('Please choose atleast 1 criteria.')
-    return
-  }
+  
+    
+  
   // .checked is boolean
   if(upper2.checked) {
       pw.push(getUppercase())
@@ -67,6 +66,10 @@ function writePassword() {
   if (len < 8 || len > 128) {
     alert('Please enter a number greater than 8 and less than 128.')
     return 
+  }
+
+  if(!upper2.checked && !lower2.checked && !number2.checked && !character2.checked) {
+    alert('Please choose atleast 1 criteria.')
   }
 
   var password = generatePassword();
