@@ -37,9 +37,6 @@ function generatePassword() {
   //Empty array
   var pw = [];
 
-  
-    
-  
   // .checked is boolean
   if(upper2.checked) {
       pw.push(getUppercase())
